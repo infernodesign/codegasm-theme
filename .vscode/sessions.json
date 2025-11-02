@@ -1,0 +1,21 @@
+{
+  "$schema": "https://cdn.statically.io/gh/nguyenngoclongdev/cdn/main/schema/v11/terminal-keeper.json",
+  "theme": "tribe",
+  "active": "default",
+  "activateOnStartup": true,
+  "keepExistingTerminals": false,
+  "noClear": true,
+  "sessions": {
+    "default": [
+      {
+        "name": "root",
+        "autoExecuteCommands": false,
+        "color": "terminal.ansiBrightMagenta",
+        "commands": [],
+        "cwd": "",
+        "focus": true,
+        "icon": "root-folder"
+      }
+    ]
+  }
+}

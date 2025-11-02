@@ -1,0 +1,70 @@
+name: Bug Report
+description: Report an issue
+labels: [ pending triage ]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this bug report!
+
+        If the bug is trivial and straightforward, you can help by **creating a quick pull request**!
+        For Q&A, please open a [GitHub Discussion](https://github.com/infernodesign/codegasm-theme/discussions) instead.
+  - type: textarea
+    id: bug-description
+    attributes:
+      label: Describe the bug
+      description: A clear and concise description of the bug.
+      placeholder: Bug description
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction
+      description: A [minimal reproducible example](https://stackoverflow.com/help/minimal-reproducible-example) of how to reproduce the bug.
+      placeholder: Reproduction
+    validations:
+      required: true
+  - type: textarea
+    id: system-info
+    attributes:
+      label: System Info
+      description: Output of `npx envinfo --system --binaries --browsers`
+      render: Shell
+      placeholder: System, Binaries, Browsers
+    validations:
+      required: true
+  - type: dropdown
+    id: package-manager
+    attributes:
+      label: Package Manager
+      description: Select the package manager used for the project.
+      options:
+        - npm
+        - yarn
+        - pnpm
+        - bun
+        - other
+        - n/a
+    validations:
+      required: true
+  - type: checkboxes
+    id: checkboxes
+    attributes:
+      label: Validations
+      description: 'Before submitting the issue, I attest that I have read and agree to the following:'
+      options:
+        - label: 'The [Code of Conduct](https://github.com/infernodesign/codegasm-theme/blob/main/CODE_OF_CONDUCT.md)'
+          required: true
+        - label: 'The [Contributing Guide](https://github.com/infernodesign/codegasm-theme/blob/main/CONTRIBUTING.md)'
+          required: true
+        - label: I have checked for existing issues that report the same bug.
+          required: true
+  - type: checkboxes
+    id: contributions
+    attributes:
+      label: Contributions
+      description: This project is maintained by volunteers, so your help is greatly appreciated.
+      options:
+        - label: I am willing to submit a PR to fix this issue
+        - label: I am willing to submit a PR with failing tests

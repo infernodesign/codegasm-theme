@@ -1,5 +1,5 @@
 {
-  "extends": "@inferno-design/typescript-config/base.json",
+  "extends": "@infernodesign/typescript-config/base.json",
   "compilerOptions": {
     "tsBuildInfoFile": "node_modules/.cache/tsbuildinfo.json",
     "resolveJsonModule": true,

@@ -1,0 +1,21 @@
+# Validate commit messages
+commit-msg:
+  commands:
+    commitlint:
+      run: npx commitlint --edit {1}
+
+# Validate code before committing
+pre-commit:
+  skip: [ merge, rebase ]
+  jobs:
+    - name: Lint
+      group:
+        jobs:
+          - name: ESLint
+            glob: '*'
+            run: npx eslint {staged_files} --fix --no-warn-ignored
+            stage_fixed: true
+          - name: TypeScript
+            glob: '**/*.ts'
+            run: npx tsc --noEmit --emitDeclarationOnly false
+            stage_fixed: true

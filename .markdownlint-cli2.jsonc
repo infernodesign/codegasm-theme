@@ -1,0 +1,28 @@
+{
+  "$schema": "https://raw.githubusercontent.com/DavidAnson/markdownlint-cli2/refs/heads/main/schema/markdownlint-cli2-config-schema.json",
+  "config": {
+    "default": true,
+    "code-block-style": { "style": "fenced" },
+    "code-fence-style": { "style": "backtick" },
+    "heading-style": { "style": "atx" },
+    "line-length": false,
+    "ol-prefix": false,
+    "no-bare-urls": false,
+    "no-duplicate-heading": { "siblings_only": true },
+    "no-emphasis-as-heading": false,
+    "no-inline-html": false,
+    "single-h1": true
+  },
+  "globs": [
+    "**/*.{md,mkd,mdwn,mdown,markdown,markdn,mdtxt,mdtext,workbook}",
+    "!**/.bmad-core/**/*.md",
+    "!**/.claude/**/*.md",
+    "!**/.cursor/**/*.md",
+    "!**/.cursor/**/*.mdc",
+    "!**/node_modules",
+    "!**/.git",
+    "!**/vendor",
+    "!**/CHANGELOG.md",
+    "!**/BROWSERS_LIST.md"
+  ]
+}

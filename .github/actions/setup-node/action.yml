@@ -11,11 +11,9 @@ runs:
         run_install: false
 
     - name: Setup Node.js
-      uses: actions/setup-node@v4
+      uses: actions/setup-node@v5
       with:
         always-auth: false
         cache: pnpm
         cache-dependency-path: pnpm-lock.yaml
         node-version-file: package.json
-        registry-url: 'https://npm.pkg.github.com'
-        scope: '@inferno-design'

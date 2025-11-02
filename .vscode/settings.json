@@ -1,31 +1,44 @@
 {
-  "[javascript]": {
-    "editor.defaultFormatter": "vscode.typescript-language-features"
+  // Written out individually so users can override in their settings.json
+  "[env]": {
+    "editor.formatOnSave": false
   },
-  "[javascriptreact]": {
-    "editor.defaultFormatter": "vscode.typescript-language-features"
+  "[html]": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": "explicit"
+    }
   },
-  "[json]": {
-    "editor.defaultFormatter": "vscode.json-language-features"
+  "[javascript][javascriptreact][typescript][typescriptreact]": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": "explicit",
+      "source.organizeImports": "never"
+    }
   },
-  "[jsonc]": {
-    "editor.defaultFormatter": "vscode.json-language-features"
+  "[json][jsonc]": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": "explicit"
+    }
   },
-  "[markdown]": {
-    "editor.defaultFormatter": "DavidAnson.vscode-markdownlint"
+  "[mdx][markdown]": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": "explicit",
+      "source.fixAll.markdownlint": "explicit"
+    }
   },
-  "[typescript]": {
-    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  "[toml]": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": "explicit"
+    }
   },
-  "[typescriptreact]": {
-    "editor.defaultFormatter": "vscode.typescript-language-features"
+  "[xml]": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": "explicit"
+    }
   },
-  "[yaml]": {
-    "editor.defaultFormatter": "redhat.vscode-yaml"
-  },
-  "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": "explicit",
-    "source.organizeImports": "never"
+  "[yaml][github-actions-workflow]": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": "explicit"
+    }
   },
   "editor.formatOnPaste": false,
   "editor.formatOnSave": false,
@@ -34,33 +47,53 @@
   "eslint.enable": true,
   "eslint.format.enable": true,
   "eslint.lintTask.enable": true,
-  "eslint.probe": [
-    "github-actions-workflow",
-    "javascript",
-    "javascriptreact",
-    "json",
-    "jsonc",
-    "markdown",
-    "typescript",
-    "typescriptreact",
-    "yaml"
+  "eslint.problems.shortenToSingleLine": true,
+  // Silent the stylistic rules in the IDE, but still auto-fix them
+  "eslint.rules.customizations": [
+    { "rule": "style/*", "severity": "off" },
+    { "rule": "*-indent", "severity": "off" },
+    { "rule": "*-spacing", "severity": "off" },
+    { "rule": "*-spaces", "severity": "off" },
+    { "rule": "*-order", "severity": "off" },
+    { "rule": "*-dangle", "severity": "off" },
+    { "rule": "*-newline", "severity": "off" },
+    { "rule": "*quotes", "severity": "off" },
+    { "rule": "*semi", "severity": "off" }
   ],
-  "eslint.problems.shortenToSingleLine": false,
+  "eslint.useESLintClass": true,
   "eslint.useFlatConfig": true,
   "eslint.validate": [
     "github-actions-workflow",
+    "html",
     "javascript",
     "javascriptreact",
     "json",
     "jsonc",
     "markdown",
+    "toml",
     "typescript",
     "typescriptreact",
+    "xml",
     "yaml"
   ],
+  "eslint.workingDirectories": [
+    {
+      "mode": "auto"
+    }
+  ],
+  "markdownlint.configFile": ".markdownlint-cli2.jsonc",
+  "markdown.validate.enabled": true,
+  "markdown.validate.referenceLinks.enabled": "ignore",
   "npm.packageManager": "pnpm",
   "prettier.enable": false,
-  "yaml.format.singleQuote": true,
+  "search.exclude": {
+    "**/.cache": true,
+    "**/.turbo": true,
+    "**/dist": true,
+    "**/package-lock.json": true,
+    "**/pnpm-lock.yaml": true
+  },
   "typescript.enablePromptUseWorkspaceTsdk": true,
-  "typescript.tsdk": "./node_modules/typescript/lib"
+  "typescript.preferences.preferTypeOnlyAutoImports": true,
+  "typescript.tsdk": "node_modules/typescript/lib"
 }

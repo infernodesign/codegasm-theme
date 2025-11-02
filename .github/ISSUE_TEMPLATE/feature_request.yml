@@ -1,0 +1,50 @@
+name: New Feature Request
+description: Request a new feature
+labels: [ enhancement ]
+body:
+  - type: markdown
+    attributes:
+      value: Thanks for your interest in the project and taking the time to fill out this feature request!
+  - type: textarea
+    id: feature-description
+    attributes:
+      label: A clear and concise description of the feature request
+      description: 'As a developer using this project I want [goal / wish] so that [benefit].'
+    validations:
+      required: true
+  - type: textarea
+    id: suggested-solution
+    attributes:
+      label: Suggested solution
+      description: 'In module [x] we could provide the following implementation...'
+    validations:
+      required: true
+  - type: textarea
+    id: alternative
+    attributes:
+      label: Alternative
+      description: A clear and concise description of any alternative solutions or features I've considered.
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional context
+      description: Any other context or screenshots about the feature request.
+  - type: checkboxes
+    id: checkboxes
+    attributes:
+      label: Validations
+      description: Before submitting the issue, please make sure you do the following
+      options:
+        - label: Follow our [Code of Conduct](https://github.com/infernodesign/codegasm-theme/blob/main/CODE_OF_CONDUCT.md)
+          required: true
+        - label: Read the [Contributing Guide](https://github.com/infernodesign/codegasm-theme/blob/main/CONTRIBUTING.md).
+          required: true
+        - label: Check that there isn't already an issue that request the same feature to avoid creating a duplicate.
+          required: true
+  - type: checkboxes
+    id: contributions
+    attributes:
+      label: Contributions
+      description: This project is maintained by volunteers, so your help is greatly appreciated.
+      options:
+        - label: I am willing to submit a PR to implement this feature

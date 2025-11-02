@@ -3,7 +3,7 @@ run-name: CodeQL
 
 concurrency:
   group: '${{ github.workflow }} - ${{ github.ref }}'
-  cancel-in-progress: true
+  cancel-in-progress: ${{ github.ref != 'refs/heads/main' }}
 
 on:
   workflow_dispatch:
@@ -19,9 +19,6 @@ permissions:
   actions: read
   contents: read
 
-env:
-  NODE_AUTH_TOKEN: ${{ secrets.NODE_AUTH_TOKEN }}
-
 jobs:
   analyze:
     name: Analyze (${{ matrix.language }})
@@ -35,15 +32,13 @@ jobs:
             build-mode: none
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Setup Node.js
         uses: ./.github/actions/setup-node
 
       - name: Install Dependencies
-        run: pnpm install
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NODE_AUTH_TOKEN }}
+        run: pnpm install --frozen-lockfile
 
       - name: Initialize CodeQL
         uses: github/codeql-action/init@v3
