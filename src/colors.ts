@@ -65,17 +65,18 @@ export const colors = {
   'disabledForeground': gray600,
   'widget.border': gray900,
   'widget.shadow': transparent,
-  'selection.background': setAlpha(gray200, 0.2),
+  'selection.background': setAlpha( gray200, 0.2 ),
   'descriptionForeground': gray400,
   'errorForeground': red600,
   'icon.foreground': gray200,
-  'sash.hoverBorder': setAlpha(gray600, 0.2),
+  'sash.hoverBorder': setAlpha( gray600, 0.2 ),
 
   // Activity Bar
   'activityBar.activeBorder': violet500,
   'activityBar.background': gray950,
   'activityBar.border': gray900,
   'activityBar.foreground': gray200,
+  'activityBar.hoverBackground': gray600,
   'activityBar.inactiveForeground': gray400,
   'activityBar.activeBackground': gray900,
   'activityBar.activeFocusBorder': violet500,
@@ -97,17 +98,17 @@ export const colors = {
   // Button
   'button.border': gray900,
   'button.separator': gray900,
-  'button.background': darken(violet500, 5),
+  'button.background': gray800,
   'button.foreground': white,
-  'button.hoverBackground': violet500,
-  'button.secondaryBackground': gray800,
+  'button.hoverBackground': gray600,
+  'button.secondaryBackground': gray600,
   'button.secondaryForeground': gray200,
   'button.secondaryHoverBackground': gray700,
 
   // Checkbox
-  'checkbox.background': violet500,
+  'checkbox.background': gray800,
   'checkbox.foreground': white,
-  'checkbox.border': violet500,
+  'checkbox.border': gray800,
   'checkbox.selectBackground': gray900,
   'checkbox.selectBorder': gray800,
 
@@ -121,10 +122,10 @@ export const colors = {
   // Diff Editor
   'diffEditor.border': gray900,
   'diffEditor.diagonalFill': gray950,
-  'diffEditor.insertedLineBackground': setAlpha(green950, 0.6),
-  'diffEditor.insertedTextBackground': setAlpha(green900, 0.6),
-  'diffEditor.removedLineBackground': setAlpha(red950, 0.6),
-  'diffEditor.removedTextBackground': setAlpha(red900, 0.6),
+  'diffEditor.insertedLineBackground': setAlpha( green950, 0.6 ),
+  'diffEditor.insertedTextBackground': setAlpha( green900, 0.6 ),
+  'diffEditor.removedLineBackground': setAlpha( red950, 0.6 ),
+  'diffEditor.removedTextBackground': setAlpha( red900, 0.6 ),
 
   // Dropdown
   'dropdown.background': gray900,
@@ -132,28 +133,28 @@ export const colors = {
 
   // Editor
   'editor.background': gray950,
-  'editor.findMatchBackground': setAlpha(gray200, 0.1),
-  'editor.findMatchBorder': setAlpha(gray200, 0.6),
-  'editor.findMatchHighlightBackground': setAlpha(cyan400, 0.1),
-  'editor.findMatchHighlightBorder': setAlpha(cyan400, 0.6),
-  'editor.findRangeHighlightBackground': setAlpha(gray200, 0.1),
-  'editor.findRangeHighlightBorder': setAlpha(gray200, 0.2),
+  'editor.findMatchBackground': setAlpha( gray200, 0.1 ),
+  'editor.findMatchBorder': setAlpha( gray200, 0.6 ),
+  'editor.findMatchHighlightBackground': setAlpha( cyan400, 0.1 ),
+  'editor.findMatchHighlightBorder': setAlpha( cyan400, 0.6 ),
+  'editor.findRangeHighlightBackground': setAlpha( gray200, 0.1 ),
+  'editor.findRangeHighlightBorder': setAlpha( gray200, 0.2 ),
   'editor.foreground': gray200,
-  'editor.inactiveSelectionBackground': setAlpha(gray800, 0.6),
-  'editor.lineHighlightBackground': setAlpha(gray400, 0.1),
+  'editor.inactiveSelectionBackground': setAlpha( gray800, 0.6 ),
+  'editor.lineHighlightBackground': setAlpha( gray400, 0.1 ),
   'editor.lineHighlightBorder': transparent,
   'editor.linkedEditingBackground': gray900,
   'editor.rangeHighlightBorder': transparent,
-  'editor.selectionBackground': setAlpha(violet900, 0.5),
+  'editor.selectionBackground': setAlpha( violet900, 0.5 ),
   'editor.selectionForeground': gray200,
-  'editor.selectionHighlightBackground': setAlpha(violet400, 0.1),
-  'editor.selectionHighlightBorder': setAlpha(violet400, 0.6),
-  'editor.wordHighlightBackground': setAlpha(cyan400, 0.1),
-  'editor.wordHighlightBorder': setAlpha(cyan400, 0.6),
-  'editor.wordHighlightStrongBackground': setAlpha(gray200, 0.1),
-  'editor.wordHighlightStrongBorder': setAlpha(gray200, 0.6),
-  'editor.wordHighlightTextBackground': setAlpha(yellow400, 0.1),
-  'editor.wordHighlightTextBorder': setAlpha(yellow400, 0.6),
+  'editor.selectionHighlightBackground': setAlpha( violet400, 0.1 ),
+  'editor.selectionHighlightBorder': setAlpha( violet400, 0.6 ),
+  'editor.wordHighlightBackground': setAlpha( cyan400, 0.1 ),
+  'editor.wordHighlightBorder': setAlpha( cyan400, 0.6 ),
+  'editor.wordHighlightStrongBackground': setAlpha( gray200, 0.1 ),
+  'editor.wordHighlightStrongBorder': setAlpha( gray200, 0.6 ),
+  'editor.wordHighlightTextBackground': setAlpha( yellow400, 0.1 ),
+  'editor.wordHighlightTextBorder': setAlpha( yellow400, 0.6 ),
 
   // Editor Bracket Highlight
   'editorBracketHighlight.foreground1': blue400,
@@ -216,7 +217,7 @@ export const colors = {
   'editorHoverWidget.statusBarBackground': gray900,
 
   // Editor Indent Guide
-  'editorIndentGuide.activeBackground1': setAlpha(gray200, 0.1),
+  'editorIndentGuide.activeBackground1': setAlpha( gray200, 0.1 ),
   'editorIndentGuide.background1': gray900,
 
   // Editor Info
@@ -248,15 +249,15 @@ export const colors = {
   'editorOverviewRuler.bracketMatchForeground': gray200,
   'editorOverviewRuler.deletedForeground': orange300,
   'editorOverviewRuler.errorForeground': red600,
-  'editorOverviewRuler.findMatchForeground': setAlpha(blue500, 0.5),
+  'editorOverviewRuler.findMatchForeground': setAlpha( blue500, 0.5 ),
   'editorOverviewRuler.infoForeground': violet400,
   'editorOverviewRuler.modifiedForeground': blue400,
-  'editorOverviewRuler.rangeHighlightForeground': setAlpha(gray200, 0.2),
-  'editorOverviewRuler.selectionHighlightForeground': setAlpha(violet800, 0.2),
+  'editorOverviewRuler.rangeHighlightForeground': setAlpha( gray200, 0.2 ),
+  'editorOverviewRuler.selectionHighlightForeground': setAlpha( violet800, 0.2 ),
   'editorOverviewRuler.warningForeground': yellow300,
-  'editorOverviewRuler.wordHighlightForeground': setAlpha(gray200, 0.2),
-  'editorOverviewRuler.wordHighlightStrongForeground': setAlpha(gray200, 0.6),
-  'editorOverviewRuler.wordHighlightTextForeground': setAlpha(gray200, 0.1),
+  'editorOverviewRuler.wordHighlightForeground': setAlpha( gray200, 0.2 ),
+  'editorOverviewRuler.wordHighlightStrongForeground': setAlpha( gray200, 0.6 ),
+  'editorOverviewRuler.wordHighlightTextForeground': setAlpha( gray200, 0.1 ),
 
   // Editor Ruler
   'editorRuler.foreground': gray950,
@@ -271,7 +272,7 @@ export const colors = {
   'editorSuggestWidget.focusHighlightForeground': gray200,
   'editorSuggestWidget.foreground': gray200,
   'editorSuggestWidget.highlightForeground': gray200,
-  'editorSuggestWidget.selectedBackground': setAlpha(gray600, 0.1),
+  'editorSuggestWidget.selectedBackground': setAlpha( gray600, 0.1 ),
   'editorSuggestWidget.selectedForeground': gray200,
   'editorSuggestWidget.selectedIconForeground': gray200,
   'editorSuggestWidgetStatus.foreground': gray200,
@@ -284,7 +285,7 @@ export const colors = {
   'editorWarning.foreground': yellow300,
 
   // Editor Whitespace
-  'editorWhitespace.foreground': setAlpha(gray600, 0.1),
+  'editorWhitespace.foreground': setAlpha( gray600, 0.1 ),
 
   // Editor Widget
   'editorWidget.background': gray950,
@@ -294,12 +295,12 @@ export const colors = {
 
   // Extension Button
   'extensionButton.separator': gray900,
-  'extensionButton.background': violet500,
+  'extensionButton.background': gray800,
   'extensionButton.foreground': white,
-  'extensionButton.hoverBackground': darken(violet500, 5),
-  'extensionButton.prominentBackground': violet500,
+  'extensionButton.hoverBackground': darken( gray800, 5 ),
+  'extensionButton.prominentBackground': gray800,
   'extensionButton.prominentForeground': white,
-  'extensionButton.prominentHoverBackground': darken(violet500, 5),
+  'extensionButton.prominentHoverBackground': darken( gray800, 5 ),
 
   // Git
   'git.blame.editorDecorationForeground': gray600,
@@ -339,7 +340,7 @@ export const colors = {
   'inputValidation.warningForeground': black,
 
   // List
-  'list.activeSelectionBackground': setAlpha(gray600, 0.2),
+  'list.activeSelectionBackground': setAlpha( gray600, 0.2 ),
   'list.activeSelectionForeground': white,
   'list.activeSelectionIconForeground': gray200,
   'list.deemphasizedForeground': gray400,
@@ -348,16 +349,16 @@ export const colors = {
   'list.filterMatchBackground': gray900,
   'list.filterMatchBorder': gray900,
   'list.focusAndSelectionOutline': gray900,
-  'list.focusBackground': setAlpha(gray600, 0.2),
+  'list.focusBackground': setAlpha( gray600, 0.2 ),
   'list.focusForeground': gray200,
   'list.focusHighlightForeground': gray200,
   'list.focusOutline': gray900,
   'list.highlightForeground': gray200,
-  'list.hoverBackground': setAlpha(gray600, 0.1),
+  'list.hoverBackground': setAlpha( gray600, 0.1 ),
   'list.hoverForeground': gray200,
   'list.inactiveFocusBackground': gray900,
   'list.inactiveFocusOutline': gray600,
-  'list.inactiveSelectionBackground': setAlpha(gray600, 0.2),
+  'list.inactiveSelectionBackground': setAlpha( gray600, 0.2 ),
   'list.inactiveSelectionForeground': gray300,
   'list.inactiveSelectionIconForeground': gray400,
   'list.invalidItemForeground': red600,
@@ -372,11 +373,11 @@ export const colors = {
   // Minimap
   'minimap.background': gray950,
   'minimap.errorHighlight': red600,
-  'minimap.findMatchHighlight': setAlpha(blue500, 0.8),
-  'minimap.foregroundOpacity': setAlpha(gray200, 0.8),
+  'minimap.findMatchHighlight': setAlpha( blue500, 0.8 ),
+  'minimap.foregroundOpacity': setAlpha( gray200, 0.8 ),
   'minimap.infoHighlight': violet400,
-  'minimap.selectionHighlight': setAlpha(gray200, 0.2),
-  'minimap.selectionOccurrenceHighlight': setAlpha(gray200, 0.5),
+  'minimap.selectionHighlight': setAlpha( gray200, 0.2 ),
+  'minimap.selectionOccurrenceHighlight': setAlpha( gray200, 0.5 ),
   'minimap.warningHighlight': yellow300,
 
   // Minimap Gutter
@@ -385,9 +386,9 @@ export const colors = {
   'minimapGutter.modifiedBackground': blue500,
 
   // Minimap Slider
-  'minimapSlider.activeBackground': setAlpha(gray600, 0.3),
-  'minimapSlider.background': setAlpha(gray600, 0.2),
-  'minimapSlider.hoverBackground': setAlpha(gray600, 0.3),
+  'minimapSlider.activeBackground': setAlpha( gray600, 0.3 ),
+  'minimapSlider.background': setAlpha( gray600, 0.2 ),
+  'minimapSlider.hoverBackground': setAlpha( gray600, 0.3 ),
 
   // Notification Center
   'notificationCenter.border': gray900,
@@ -405,10 +406,10 @@ export const colors = {
   // Peek View
   'peekView.border': gray800,
   'peekViewEditor.background': gray900,
-  'peekViewEditor.matchHighlightBackground': setAlpha(gray600, 0.2),
+  'peekViewEditor.matchHighlightBackground': setAlpha( gray600, 0.2 ),
   'peekViewResult.background': gray900,
-  'peekViewResult.matchHighlightBackground': setAlpha(gray600, 0.2),
-  'peekViewResult.selectionBackground': setAlpha(gray600, 0.1),
+  'peekViewResult.matchHighlightBackground': setAlpha( gray600, 0.2 ),
+  'peekViewResult.selectionBackground': setAlpha( gray600, 0.1 ),
   'peekViewResult.selectionForeground': gray200,
   'peekViewTitle.background': gray950,
 
@@ -426,9 +427,9 @@ export const colors = {
 
   // Scrollbar
   'scrollbar.shadow': transparent,
-  'scrollbarSlider.activeBackground': setAlpha(gray600, 0.3),
-  'scrollbarSlider.background': setAlpha(gray600, 0.2),
-  'scrollbarSlider.hoverBackground': setAlpha(gray600, 0.3),
+  'scrollbarSlider.activeBackground': setAlpha( gray600, 0.3 ),
+  'scrollbarSlider.background': setAlpha( gray600, 0.2 ),
+  'scrollbarSlider.hoverBackground': setAlpha( gray600, 0.3 ),
 
   // Settings
   'settings.headerForeground': gray200,
@@ -436,19 +437,19 @@ export const colors = {
   'settings.dropdownBackground': gray950,
   'settings.dropdownForeground': gray200,
   'settings.dropdownBorder': gray900,
-  'settings.dropdownListBorder': setAlpha(gray600, 0.1),
+  'settings.dropdownListBorder': setAlpha( gray600, 0.1 ),
   'settings.checkboxBackground': gray900,
   'settings.checkboxForeground': gray200,
   'settings.checkboxBorder': gray900,
-  'settings.rowHoverBackground': setAlpha(gray600, 0.1),
+  'settings.rowHoverBackground': setAlpha( gray600, 0.1 ),
   'settings.textInputBackground': gray950,
   'settings.textInputForeground': gray200,
   'settings.textInputBorder': gray900,
   'settings.numberInputBackground': gray950,
   'settings.numberInputForeground': gray200,
   'settings.numberInputBorder': gray900,
-  'settings.focusedRowBackground': setAlpha(gray600, 0.1),
-  'settings.focusedRowBorder': setAlpha(gray600, 0.2),
+  'settings.focusedRowBackground': setAlpha( gray600, 0.1 ),
+  'settings.focusedRowBorder': setAlpha( gray600, 0.2 ),
   'settings.headerBorder': gray900,
   'settings.sashBorder': gray900,
   'settings.settingsHeaderHoverForeground': gray200,
@@ -470,16 +471,16 @@ export const colors = {
   'statusBar.noFolderBackground': gray950,
 
   // Status Bar Item
-  'statusBarItem.activeBackground': darken(violet500, 5),
+  'statusBarItem.activeBackground': gray600,
   'statusBarItem.errorBackground': red600,
   'statusBarItem.errorForeground': white,
-  'statusBarItem.focusBorder': violet500,
-  'statusBarItem.hoverBackground': darken(violet500, 5),
+  'statusBarItem.focusBorder': gray600,
+  'statusBarItem.hoverBackground': gray600,
   'statusBarItem.hoverForeground': white,
-  'statusBarItem.remoteBackground': darken(violet500, 5),
+  'statusBarItem.remoteBackground': darken( violet500, 5 ),
   'statusBarItem.remoteForeground': white,
   'statusBarItem.warningBackground': yellow300,
-  'statusBarItem.warningForeground': white,
+  'statusBarItem.warningForeground': gray950,
 
   // Tab
   'tab.activeBackground': gray900,
@@ -489,7 +490,7 @@ export const colors = {
   'tab.border': gray900,
   'tab.inactiveBackground': gray950,
   'tab.inactiveForeground': gray400,
-  'tab.lastPinnedBorder': setAlpha(gray600, 0.2),
+  'tab.lastPinnedBorder': setAlpha( gray600, 0.2 ),
 
   // Text
   'textLink.foreground': gray200,
@@ -536,7 +537,7 @@ export const colors = {
 
   // Toolbar
   'toolbar.activeBackground': gray800,
-  'toolbar.hoverBackground': setAlpha(gray200, 0.1),
+  'toolbar.hoverBackground': setAlpha( gray200, 0.1 ),
   'toolbar.hoverOutline': gray800,
 
   // Tree
@@ -550,7 +551,7 @@ export const colors = {
   'welcomePage.progress.background': gray950,
   'welcomePage.progress.foreground': gray200,
   'welcomePage.tileBackground': gray950,
-  'welcomePage.tileHoverBackground': setAlpha(gray600, 0.1),
+  'welcomePage.tileHoverBackground': setAlpha( gray600, 0.1 ),
   'welcomePage.tileBorder': gray900,
 
   // Walkthrough

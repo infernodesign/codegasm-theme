@@ -8,8 +8,8 @@ import tinycolor from 'tinycolor2'
  *
  * @returns {string} The brightened hex color
  */
-export function brighten(hex: string, percent: number): string {
-  return tinycolor(hex).brighten(percent).toHex8String().toUpperCase()
+export function brighten( hex: string, percent: number ): string {
+  return tinycolor( hex ).brighten( percent ).toHex8String().toUpperCase()
 }
 
 /**
@@ -20,8 +20,8 @@ export function brighten(hex: string, percent: number): string {
  *
  * @returns {string} The darkened hex color
  */
-export function darken(hex: string, percent: number): string {
-  return tinycolor(hex).darken(percent).toHex8String().toUpperCase()
+export function darken( hex: string, percent: number ): string {
+  return tinycolor( hex ).darken( percent ).toHex8String().toUpperCase()
 }
 
 /**
@@ -32,8 +32,8 @@ export function darken(hex: string, percent: number): string {
  *
  * @returns {string} The desaturated hex color
  */
-export function desaturate(hex: string, percent: number): string {
-  return tinycolor(hex).desaturate(percent).toHex8String().toUpperCase()
+export function desaturate( hex: string, percent: number ): string {
+  return tinycolor( hex ).desaturate( percent ).toHex8String().toUpperCase()
 }
 
 /**
@@ -44,6 +44,6 @@ export function desaturate(hex: string, percent: number): string {
  *
  * @returns {string} The hex color with the alpha value set
  */
-export function setAlpha(hex: string, alpha: number): string {
-  return tinycolor(hex).setAlpha(alpha).toHex8String().toUpperCase()
+export function setAlpha( hex: string, alpha: number ): string {
+  return tinycolor( hex ).setAlpha( alpha ).toHex8String().toUpperCase()
 }

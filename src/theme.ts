@@ -149,10 +149,10 @@ export function getTheme(): unknown {
           ],
           gray200,
         ],
-      ].map(([scope, foreground]) => ({
+      ].map( ( [ scope, foreground ] ) => ( {
         scope,
         settings: { foreground },
-      })),
+      } ) ),
 
       // Font styles
       ...[
@@ -176,11 +176,11 @@ export function getTheme(): unknown {
           ],
           'italic',
         ],
-      ].map(([scope, style]) => ({
+      ].map( ( [ scope, style ] ) => ( {
         name: style,
         scope,
         settings: { fontStyle: style },
-      })),
+      } ) ),
     ],
   }
 }
