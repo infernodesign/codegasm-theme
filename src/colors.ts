@@ -98,9 +98,9 @@ export const colors = {
   // Button
   'button.border': gray900,
   'button.separator': gray900,
-  'button.background': gray800,
+  'button.background': darken( violet500, 5 ),
   'button.foreground': white,
-  'button.hoverBackground': gray600,
+  'button.hoverBackground': violet500,
   'button.secondaryBackground': gray600,
   'button.secondaryForeground': gray200,
   'button.secondaryHoverBackground': gray700,
@@ -295,12 +295,12 @@ export const colors = {
 
   // Extension Button
   'extensionButton.separator': gray900,
-  'extensionButton.background': gray800,
+  'extensionButton.background': violet500,
   'extensionButton.foreground': white,
-  'extensionButton.hoverBackground': darken( gray800, 5 ),
-  'extensionButton.prominentBackground': gray800,
+  'extensionButton.hoverBackground': darken( violet500, 5 ),
+  'extensionButton.prominentBackground': violet500,
   'extensionButton.prominentForeground': white,
-  'extensionButton.prominentHoverBackground': darken( gray800, 5 ),
+  'extensionButton.prominentHoverBackground': darken( violet500, 5 ),
 
   // Git
   'git.blame.editorDecorationForeground': gray600,
