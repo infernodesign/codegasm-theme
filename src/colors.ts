@@ -76,7 +76,6 @@ export const colors = {
   'activityBar.background': gray950,
   'activityBar.border': gray900,
   'activityBar.foreground': gray200,
-  'activityBar.hoverBackground': gray600,
   'activityBar.inactiveForeground': gray400,
   'activityBar.activeBackground': gray900,
   'activityBar.activeFocusBorder': violet500,
@@ -207,7 +206,7 @@ export const colors = {
   'editorGutter.modifiedBackground': blue500,
 
   // Editor Hint
-  'editorHint.foreground': gray400,
+  'editorHint.foreground': blue400,
 
   // Editor Hover Widget
   'editorHoverWidget.background': gray900,
@@ -278,8 +277,8 @@ export const colors = {
   'editorSuggestWidgetStatus.foreground': gray200,
 
   // Editor Unnecessary Code
-  'editorUnnecessaryCode.border': gray900,
-  'editorUnnecessaryCode.opacity': gray900,
+  'editorUnnecessaryCode.opacity': setAlpha( black, 0.6 ),
+  'editorUnnecessaryCode.border': orange300,
 
   // Editor Warning
   'editorWarning.foreground': yellow300,
